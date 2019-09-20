@@ -49,6 +49,8 @@ public class ReadChildNodes {
 			}
 		} catch (RepositoryException e) {
 			e.printStackTrace();
+		} finally {
+			session.logout();
 		}
 
 	}
